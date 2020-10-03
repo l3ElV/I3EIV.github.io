@@ -1,0 +1,1389 @@
+/*setting up the page for all browsers*/
+
+body{
+
+	margin: 0;
+	padding: 0;
+	
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	line-height: 1.8;
+
+
+}
+
+/*general settings*/
+
+p, h1, h2, h3, span{
+
+
+text-transform: uppercase;
+
+
+
+}
+
+h2{
+
+	font-size: 71px;
+	font-weight: 900;
+}
+
+svg{
+
+
+	width:4em;
+	height:4em;
+	display: inline-block;
+
+	
+}
+
+a, a:hover{
+
+	text-decoration: initial;
+	color: initial;
+
+}
+
+/*First parallax starting from the top*/
+
+.parallax{
+
+	margin: 0;
+	padding: 0;
+
+	height: 100vh;
+	width: 100%;
+
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#parallax1{
+
+	
+	background-image: url("image/parallax1.jpg");
+	position: relative;
+	background-position: 20%;
+	
+}
+
+.colorWhite{
+
+
+	color: white;
+}
+
+
+#sloganNameWrapper{
+
+	width: 85%;
+	min-width: 90px;
+	height: 25%;
+	min-height: 90px;
+
+	position: absolute;
+	right:0;
+	bottom: 0;
+
+	line-height: 0.5;
+
+
+}
+
+#sloganNameWrapper h2{
+
+	font-size: 65px;
+	font-weight: 700;
+	}
+
+
+/*Text right below the parallax image with a green background*/
+
+#text1Wrapper{
+
+	background-color: #838E83;
+	position: relative;
+}
+
+#text1{
+
+	text-align: center;
+	padding: auto;
+	margin-left: auto;
+	margin-right: auto;
+	height: 65vh;
+
+	width: 700px;
+	max-width: 100%;
+
+	color: white;
+
+	position: relative;
+	top: 10%;
+
+
+
+
+
+}
+
+#text1 h2{
+
+	color:#A9B4A9;
+	font-size: 71px;
+	font-weight: 900;
+	line-height: initial;
+}
+
+
+/*Second parallax image starting from the top*/
+
+#parallax2{
+
+	
+	background-image: url("image/parallax2.jpg");
+
+	}
+
+
+/*services block*/
+
+#servicesBlockWrapper{
+
+	display: flex;
+	flex-direction: column;
+
+	height: 100vh;
+	background-color: #BFAE9E;
+
+	color: #9E8F81;
+
+
+	
+}
+
+#servicesBlockWrapper #service-section-title{
+
+	margin-top: 15vh;
+	margin-left: 10vh;
+}
+
+
+#servicesBlockWrapper #service-section-title h2, #thirdTextSection h2{
+
+font-size: 74px;
+font-weight: 900;
+line-height: 0.5;
+
+}
+
+#servicesBlockWrapper #service-section-title span, #fourthTextSection #textFourthTextSection p{
+font-size: 24px;
+font-weight: 900;
+letter-spacing: 1.9px;
+line-height: initial;
+
+}
+
+#services{
+
+	display: flex;
+	
+	text-align: center;
+
+	width: 1300px;
+	max-width: 100%;
+
+	margin: auto;
+
+}
+
+#services > div{
+
+		margin: 2%;
+
+	
+}
+
+
+#services p{
+
+	color: white;
+
+}
+
+
+/*Third parallax image starting from the top*/
+
+#parallax3{
+
+	
+	background-image: url("image/parallax3.jpg");
+
+	}
+
+#thirdTextSection{
+
+	display: flex;
+	flex-direction: column;
+	color: #A7A395;
+	overflow: hidden;
+
+
+}
+
+#topRow, #bottomRow, #leftImageTextWrapper, #rightImageTextWrapper{
+
+	display: flex;
+
+}
+
+.imageTextWrapper{
+
+	flex: 2;
+	overflow: hidden;
+
+}
+
+
+#leftImageTextWrapper, #rightImageTextWrapper{
+
+	width: 100vw;
+	height: 100vh;
+
+	
+}
+
+#topRow #leftImage, #bottomRow #rightImage{
+
+	height: 100%;
+	width: 100%;
+
+	background-size: cover;
+	transition-duration: 1s;
+
+	position: relative;
+	transform: scale(1.2);
+
+	background-position: 20%;
+
+}
+
+
+#topRow .imageTextWrapper:hover #leftImage, #bottomRow .imageTextWrapper:hover #rightImage{
+
+	filter: brightness(0.7);
+	transition-duration: 1s;
+	transform: translateY(10%) scale(1.2);
+
+}
+
+
+#topRow #leftImageTextWrapper, #bottomRow #rightImageTextWrapper{
+
+	height: 100vh;
+
+	position: relative;
+}
+
+#topRow #leftImage{
+
+
+
+	background-image: url("image/small-suite.jpg");
+
+}
+
+
+#topRow #leftImage img{
+
+
+	width: 100%;
+	height: 100%;
+
+
+
+}
+
+
+#bottomRow #rightImage{
+
+
+	background-image: url("image/large-suite.jpg");
+
+}
+
+.textThirdTextSection{
+
+	flex: 1;
+	z-index: 5;
+	text-transform: uppercase;
+}
+
+#rightText, #leftText{
+
+	margin-top:5%;
+	margin-left: 1%;
+}
+
+p.textThirdTextSection, #fourthTextSection p{
+
+	display: inline-block;
+	position: absolute;	
+	top: 50%;
+	left: 45%;
+
+	color: white;
+	font-weight: 900;
+	font-size: 2em;
+
+}
+
+#parallax4{
+
+	background-image: url("image/parallax4.jpg");
+
+	background-position: 40%;
+
+}
+
+#fourthTextSection{
+
+
+	height: 101vh;
+	background-size: cover;
+
+	margin: 0;
+	padding: 0;
+
+	position: relative;
+	background-position: 20%;
+	overflow: hidden;
+	
+
+}
+
+#fourthTextSection #fourthTextSectionBackground{
+
+
+	transition-duration: 1.5s;
+
+}
+
+#fourthTextSection:hover #fourthTextSectionBackground{
+
+
+	filter: brightness(0.3);
+	transition-duration: 1.5s;
+}
+
+#fourthTextSection #textFourthTextSection{
+
+
+	transition-duration: 2s;
+
+}
+
+#fourthTextSection:hover #textFourthTextSection{
+
+
+	transform: scale(1.2);
+	transition-duration: 2s;
+
+}
+
+#fourthTextSectionBackground{
+
+	background-image: url("image/fourthTextSection.jpg");
+	background-position: 20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: brightness(0.6);
+
+	position: absolute;
+	width: 100%;
+	height:101vh;
+}
+
+#fourthTextSection #textFourthTextSection{
+
+	height: 100%;
+	width: 100%;
+	padding: auto;
+
+
+}
+
+
+#fourthTextSection #textFourthTextSection p{
+
+	font-size: 1em;
+	z-index: 5;
+
+	width: 100%;
+	text-align: center;
+
+	line-height: 1.8;
+
+	left: initial;
+}
+
+#fourthTextSection #textFourthTextSection p span{
+
+	font-size: 30px;
+	font-weight: 700;
+}
+
+#blocksWrapper{
+
+	
+		width: 100%;
+		overflow: hidden;
+
+}
+
+.rows-column{
+
+	height: 65vh;
+	width: 100%;
+	display: flex;
+
+}
+
+.textBlock{
+
+
+	width: 50%;
+	
+
+}
+.textBlock h2{
+
+	line-height: initial;
+	font-size: 71px;
+	font-weight: 900;
+
+}
+
+#firstTextBlock, #thirdTextBlock, #principlesBlockWrapper{
+
+	color: rgba(122, 122, 122, 0.6392156862745098);
+	background-color: rgba(167, 163, 149, 0.38);
+}
+
+#firstTextBlock h2, #thirdTextBlock h2{
+
+	color: #A7A395;
+
+}
+
+#secondTextBlock, #fourthTextBlock, #fifthTextBlock {
+
+	color: white;
+
+}
+
+#secondTextBlock {
+
+	background-color: #9C837C;
+}
+
+#secondTextBlock h2{
+
+	color: #836D67;
+
+}
+
+#thirdTextBlock{
+
+	background-color: rgba(167, 163, 149, 0.38);
+}
+
+#thirdTextBlock h2{
+
+	color: #A7A395;
+}
+
+#fourthTextBlock {
+
+	background-color: #838E83;
+}
+
+#fourthTextBlock h2{
+
+	color: #A9B4A9;
+
+}
+
+#fifthTextBlock {
+
+	background-color: #A2B7BC;
+}
+
+#fifthTextBlock h2{
+
+	color: #BECDD1;
+
+}
+
+
+
+.textWrapper{
+
+
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+
+.pictureBlock{
+
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	height: 100%;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 20%;
+}
+
+
+#blocksWrapper #pictureBlockOne{
+
+	background-image: url("image/pictureBlockOne.jpg");
+
+}
+
+
+#blocksWrapper #pictureBlockTwo{
+
+	background-image: url("image/pictureBlockTwo.jpg");
+
+
+}
+
+#blocksWrapper #pictureBlockThree{
+
+	background-image: url("image/pictureBlockThree.jpg");
+
+
+}
+
+#blocksWrapper #pictureBlockFour{
+
+	background-image: url("image/pictureBlockFour.jpg");
+
+
+}
+
+#blocksWrapper #pictureBlockFive{
+
+	background-image: url("image/pictureBlockFive.jpg");
+
+
+}
+
+/*Principles section*/
+
+#principlesBlockWrapper{
+
+	display: flex;
+	flex-direction: column;
+
+	height: 101vh;
+	overflow: hidden;
+	
+}
+
+#principlesBlock{
+
+	width: 1300px;
+	max-width: 100%;
+	margin: auto;
+}
+
+#principles-section-title{
+
+	text-align: center;
+}
+
+#principles{
+
+	display: flex;
+	
+	text-align: center;
+
+	margin: auto;
+
+}
+
+#principles > div{
+
+		margin: 2%;
+
+	
+}
+
+#principlesBlockWrapper #principles-section-title{
+
+	margin: auto;
+
+}
+
+
+#principlesBlockWrapper #principles-section-title h2{
+
+font-size: 74px;
+font-weight: 900;
+line-height: 0.5;
+
+}
+
+/*---------------Lets Meet Section-----------------------------*/
+
+#letsMeetSection{
+
+	height: 80vh;
+	background-color: #A2B7BC;
+}
+
+#titlePhotosWrapper{
+
+
+	margin: auto;
+	width: 1200px;
+	max-width: 100%;
+
+
+}
+
+
+#letsMeetSection h3, #letsMeetSection h2{
+
+	color:#C8DADE;
+
+}
+
+#letsMeetSection h2{
+
+	text-align: center;
+}
+
+#letsMeetSectionPhotos{
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.photosWrapper{
+
+	
+	width: 18%;
+	height: 450px;
+	border: solid #C8DADE;
+
+	position: relative;
+	overflow: hidden;
+}
+
+.photosWrapper a{
+
+	color: #C8DADE;
+	border: solid #C8DADE;
+	padding: 10px;
+
+}
+
+.photos{
+
+
+	width: 100%;
+	height: 100%;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:  center top;
+
+	position: relative;
+	z-index: 1;
+
+	filter: brightness(0.5);
+	-moz-filter: brightness(0.5);
+	transition-duration: 1.25s;
+	
+
+
+
+}
+
+.photosWrapper:hover .photos{
+
+	transition-duration: 1.25s;
+	filter: brightness(0.3);
+
+}
+
+.photosWrapper:hover .nameAndJobBlock{
+
+		transform: translateX(0%);
+		transition: 1.25s;
+}
+
+
+
+/*.photos:hover + .nameAndJobBlock{
+
+		transform: translateX(20%);
+		transition: 1.25s;
+}
+
+.nameAndJobBlock{
+
+	transform: translateX(-100%);
+	transition: 1.25s;
+}
+*/
+
+.nameAndJobBlock{
+
+	position: absolute;
+	bottom: 20%;
+
+	display: flex;
+	flex-direction: column;
+
+	z-index: 2;
+
+	transform: translateX(-250px);
+	transition: 1.25s;
+
+	margin-left: 10px;
+	width: auto;
+	
+}
+
+
+
+/*link Linkedin*/
+.nameAndJobBlock span{
+
+	text-transform: none;
+	margin-top: 1rem;
+}
+
+.nameAndJobBlock a{
+
+	border-radius: 3px;
+	border-width: 2px;
+
+	line-height: 1;
+	font-size: 15px;
+	text-align: center;
+
+	display: inline; 
+
+	margin-top: 10px;
+
+}
+
+.name{
+
+	font-size: 25px;
+	margin: 0;
+	line-height: 1;
+
+}
+
+.jobs{
+
+	color: #bfbfbf;
+}
+
+
+
+
+/*photos from left to right (computer display) or up to down (mobile display)*/
+#photoOne{
+
+	background-image: url(image/O-KooPhoto.jpeg);
+
+
+}
+
+#photoTwo{
+
+	background-image: url(image/mortenPhoto.jpg);
+	
+
+}
+
+#photoThree{
+
+	background-image: url(image/simonPhoto.jpg);
+	
+}
+
+#photoFour{
+
+	background-image: url(image/milicaPhoto.jpg);
+	
+}
+
+#photoFive{
+
+	background-image: url(image/christian.jpg);
+	
+}
+
+
+/*-------------FAQ SECTION---------------------*/
+
+#FAQsection{
+
+	padding: 50px;
+	padding-bottom: 100px;
+	width: auto;
+	height: auto;
+	background-image: url(image/parallaxFAQ.jpeg);
+
+}
+
+#FAQsection #FAQWrapper{
+
+	margin: auto;
+	width: 780px;
+	max-width: 100%;
+}
+
+#FAQHeader{
+
+	text-align: center;
+}
+
+
+#FAQsection span, #FAQsection h2, #FAQsection .answers{
+
+	color: #4A6883;
+}
+
+#FAQsection h2{
+
+	margin: 0;
+}
+
+
+#FAQsection span{
+
+	font-size: 25px;
+	font-weight: 900;
+	
+}
+
+#FAQsection p{
+
+	font-size: 17px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.1px;
+
+}
+
+#FAQHeader p{
+
+	color: white;
+
+}
+
+#questionsWrapper{
+
+	margin-top: 100px;
+
+}
+
+.questions{
+
+	background-color: rgba(255,255,255, 0.5);
+
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+
+	user-select: none;
+
+}
+
+.textQuestions, .answers{
+
+	padding: 20px;
+	line-height: initial;
+}
+
+.questions a{
+
+	background-color: rgba(255,255,255, 0);
+	border: none;
+
+	z-index: 5;
+	position: relative;
+
+	display: flex;
+	align-items: center;
+
+	
+}
+
+.questions a svg{
+
+
+	height: 2em;
+	width: 2em;
+	transition-duration: 0.5s;
+
+
+	
+}
+
+.questions.rotationCaretFaq a svg{
+
+
+	transform: rotate(90deg);
+	transition-duration: 0.5s;
+
+}
+/*a refaire je fais une media querie plus bas*/
+.answerWrappers{
+
+	height: 0;
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+.questions.rotationCaretFaq + div{
+
+
+  animation: scrollingMenu 1s ease-in-out;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+	
+}
+
+/*.questions.rotationCaretFaq + div{
+
+	transition-duration: 1.25s;
+	
+	
+	max-height: 300px;
+	
+}*/
+
+
+.answers{
+
+	background-color: rgba(255,255,255, 0.7);
+	line-height: 1.8;
+
+
+	
+}
+
+#questionOne a:focus .answerWrappers{
+
+	height: auto;
+	transition-duration: 0.5;
+}
+
+/*CONTACT US*/
+
+#contactUsSection{
+
+	background-color: rgba(0, 0, 0, 0.12);
+}
+
+#contactUsWrapper{
+
+	margin: auto;
+	width: 1100px;
+	height: 70vh;
+
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+#contactUsWrapper h2{
+
+		color: #838E83;
+		font-size: 65px;
+		font-weight: 900;
+}
+
+#contactUsBlocks{
+
+	display: flex;
+
+	height: 50%;
+	
+	
+}
+
+
+
+#contactUsBlocks #formNewsletter div{
+
+	margin-top: 15px;
+
+	display: flex;
+			
+
+}
+
+
+
+#contactUsBlocks #formNewsletter div input{
+
+	
+	border: none;
+
+}
+
+
+form button{
+
+	background-color: #838E83;
+	transition-duration: 0.5s;
+	color: white;
+
+	font-size: 15px;
+	font-weight: 600;
+
+	padding: 10px;
+	border: none;
+
+
+}
+
+form button:hover{
+
+	cursor: pointer;
+	background-color: hsl(0, 0%, 48%);
+	transition-duration: 0.5s;
+	
+	
+}
+
+#formNewsletter button div{
+
+	color: white;
+
+
+}
+
+#contactUsLeftSide{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	width: 50%;
+
+}
+
+
+
+#contactUsLeftSide span, #contactUsLeftSide svg{
+
+		color: #838E83;
+		font-size: 16px;
+		font-weight: 600;
+
+}
+
+#socialMedia svg{
+
+	transform: scale(0.3);
+
+
+}
+
+
+#contactUsLeftSide form div{
+
+	width: 100%;
+
+}
+
+#contactUsLeftSide input{
+
+
+	background-color: rgba(0,0,0,0.11);
+	border: 1px solid #818a91;
+
+	font-size: 15px;
+	color: black;
+
+	padding: 10px;
+
+	width: 100%;
+
+
+
+}
+
+
+#contactUsRightSide{
+
+
+	width: 50%;
+
+}
+
+#contactUsRightSide form{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	height: 100%;
+
+	margin-left: 20px;
+
+}
+
+
+#contactUsRightSide form input, #contactUsRightSide form textarea {
+
+	border: solid 1px rgba(0,0,0,0.15);
+	background-color: rgba(0,0,0,0);
+
+	padding: 10px;
+
+	font-size: 16px;
+	font-weight: 400;
+
+}
+
+#contactUsRightSide form button{
+
+	width: 180px;
+	margin-right: 0;
+
+	align-self: end;
+
+
+
+	}
+
+
+
+/*footer*/
+
+footer{
+
+	background-color: #e5e5e5;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+
+}
+
+footer #footerTextWrapper{
+
+	display: flex;
+	justify-content: space-between;
+
+	margin: auto;
+	width: 1100px;
+
+	color: rgba(0,0,0,0.39);
+	font-size: 15px;
+	font-weight: 400;
+
+
+}
+
+#footerTextWrapper a{
+
+	color: rgba(0,0,0,0.39);
+	font-size: 15px;
+	font-weight: 400;
+}
+
+/*toAnimate and css linked to scripts*/
+
+/*general animation*/
+
+#companyName{
+
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+	
+
+}
+
+#slogan{
+
+	animation-name: fadeIn;
+	animation-duration: 6s;
+	animation-timing-function: ease-in-out;
+	
+
+
+}
+/*-------------------------------*/
+/*translateY while scrolling animation*/
+
+:root {
+
+		--translateY: 0vh;
+
+	}
+
+span{
+
+	display: inline-block;
+}
+
+.toAnimate{
+
+transform: translateY(var(--translateY));
+
+}
+
+
+
+
+
+/*--------------------------------------------*/
+
+.toAnimate1.animation1{
+
+	animation-name: fadeIn;
+	animation-duration: 1.25s;
+	animation-timing-function: ease-in;
+	
+
+}
+
+.animation1Delayed{
+
+	animation-name: fadeIn;
+	animation-duration: 2.5s;
+	animation-timing-function: ease-in-out;
+	
+
+
+}
+
+@keyframes fadeIn {
+
+
+		0% {
+		    opacity: 0;
+		  
+		}
+		100% {
+		    opacity: 1;
+		   
+		}
+}
+
+
+
+
+/*principles section animation*/
+
+
+.translateFromLeftToRight{
+
+	animation-name: translateFromLeftToRight;
+	animation-duration: 2s;
+
+}
+
+.translateFromBottomToTop{
+
+	animation-name: translateFromBottomToTop;
+	animation-duration: 2s;
+	
+}
+
+.translateFromRightToLeft{
+
+	animation-name: translateFromRightToLeft;
+	animation-duration: 2s;
+	
+}
+
+.textThirdTextSection h2{
+
+	animation-duration: 4s;
+}
+
+@keyframes translateFromLeftToRight {
+
+
+		0% {
+		    opacity: 0;
+		    transform: translate3d(-100vw,0,0);
+		}
+		100% {
+		    opacity: 1;
+		    transform: none;
+		}
+}
+
+@keyframes translateFromRightToLeft {
+
+
+		0% {
+		    opacity: 0;
+		    transform: translate3d(100vw,0,0);
+		}
+		100% {
+		    opacity: 1;
+		    transform: none;
+		}
+}
+
+@keyframes translateFromBottomToTop {
+
+
+		0% {
+		    opacity: 0;
+		    transform: translate3d(0,101vh,0);
+		}
+		100% {
+		    opacity: 1;
+		    transform: none;
+		}
+}
+
+p, span, h1, h2 ,h3{
+
+	animation: translateYtexts;
+
+}
+
+@keyframes translateYtexts {
+
+
+  100% {
+
+  	animation-play-state: paused;
+ 	animation-delay: calc(var(--scroll) * -1s);
+ 	animation-duration: 1s;
+ 	animation-timing-function: ease-in-out;
+
+    transform: translateY(10vh);
+  }
+
+}
