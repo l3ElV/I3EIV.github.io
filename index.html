@@ -4,6 +4,8 @@
 	<title>poshtel.com</title>
 	<link rel="stylesheet" type="text/css" href="poshtel.css">
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- to make media queries work on mobile -->
+
 	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
 	<script type="text/javascript" src="js.js"></script>
@@ -12,11 +14,14 @@
 
 	<div class="parallax colorWhite" id="parallax1">
 
-		<div id="sloganNameWrapper" class="transformY ">
+		<div id="sloganNameWrapper">
 
-			<h2 id="companyName" class="toAnimate toAnimate1 ">POSHTEL POPUP</h2>
-
-			<span id="slogan" class="toAnimate toAnimate1Delayed ">ANYWHERE CAN HAPPEN</span>
+			<div class="toAnimate ">
+				<h2 id="companyName" class="toAnimate toAnimate1 companyName">POSHTEL POPUP</h2>
+			</div>
+			<div class="toAnimate ">
+				<span id="slogan" class="toAnimate toAnimate1Delayed ">ANYWHERE CAN HAPPEN</span>
+			</div>
 
 		</div>
 
@@ -28,9 +33,9 @@
 	<div id="text1Wrapper">
 		
 	
-			<div id="text1" class="transformY">
+			<div id="text1">
 
-				<h2 class="toAnimate toAnimate1  ">POSHTEL </br> POPUP</h2>
+				<h2 class="toAnimate toAnimate1  companyName">POSHTEL </br> POPUP</h2>
 
 				<p class="toAnimate toAnimate1 ">	Poshtel PopUp is a global chain of pop-up luxury hotels designed to provide for its guests affordable suites made of sustainable materials, operated under the Poshtel PopUp Concept.</p>
 
@@ -55,7 +60,7 @@
 
 			<div id="services" class="toAnimate toAnimate1 ">
 
-					<div>
+					<div class="toAnimate toTranslateFromLeftToRight">
 						<!-- SVG handshake icon -->
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="handshake" class="svg-inline--fa fa-handshake fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M434.7 64h-85.9c-8 0-15.7 3-21.6 8.4l-98.3 90c-.1.1-.2.3-.3.4-16.6 15.6-16.3 40.5-2.1 56 12.7 13.9 39.4 17.6 56.1 2.7.1-.1.3-.1.4-.2l79.9-73.2c6.5-5.9 16.7-5.5 22.6 1 6 6.5 5.5 16.6-1 22.6l-26.1 23.9L504 313.8c2.9 2.4 5.5 5 7.9 7.7V128l-54.6-54.6c-5.9-6-14.1-9.4-22.6-9.4zM544 128.2v223.9c0 17.7 14.3 32 32 32h64V128.2h-96zm48 223.9c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM0 384h64c17.7 0 32-14.3 32-32V128.2H0V384zm48-63.9c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16c0-8.9 7.2-16 16-16zm435.9 18.6L334.6 217.5l-30 27.5c-29.7 27.1-75.2 24.5-101.7-4.4-26.9-29.4-24.8-74.9 4.4-101.7L289.1 64h-83.8c-8.5 0-16.6 3.4-22.6 9.4L128 128v223.9h18.3l90.5 81.9c27.4 22.3 67.7 18.1 90-9.3l.2-.2 17.9 15.5c15.9 13 39.4 10.5 52.3-5.4l31.4-38.6 5.4 4.4c13.7 11.1 33.9 9.1 45-4.7l9.5-11.7c11.2-13.8 9.1-33.9-4.6-45.1z"></path></svg>
 						
@@ -64,7 +69,7 @@
 						<p>Finding a suitable local partner who owns the land to form a Joint Venture.</p>
 						
 					</div>
-					<div>
+					<div class="toAnimate toTranslateFromLeftToRight">
 						<!-- SVG file-contract icon -->
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-contract" class="svg-inline--fa fa-file-contract fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM64 72c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8V72zm0 64c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm192.81 248H304c8.84 0 16 7.16 16 16s-7.16 16-16 16h-47.19c-16.45 0-31.27-9.14-38.64-23.86-2.95-5.92-8.09-6.52-10.17-6.52s-7.22.59-10.02 6.19l-7.67 15.34a15.986 15.986 0 0 1-14.31 8.84c-.38 0-.75-.02-1.14-.05-6.45-.45-12-4.75-14.03-10.89L144 354.59l-10.61 31.88c-5.89 17.66-22.38 29.53-41 29.53H80c-8.84 0-16-7.16-16-16s7.16-16 16-16h12.39c4.83 0 9.11-3.08 10.64-7.66l18.19-54.64c3.3-9.81 12.44-16.41 22.78-16.41s19.48 6.59 22.77 16.41l13.88 41.64c19.77-16.19 54.05-9.7 66 14.16 2.02 4.06 5.96 6.5 10.16 6.5zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg>
 						
@@ -73,7 +78,7 @@
 						<p>Performing a feasibility study and preparing a set of documentation for the construction permit and project financing.</p>
 						
 					</div>
-					<div>
+					<div class="toAnimate toTranslateFromBottomToTop">
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hammer" class="svg-inline--fa fa-hammer fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M571.31 193.94l-22.63-22.63c-6.25-6.25-16.38-6.25-22.63 0l-11.31 11.31-28.9-28.9c5.63-21.31.36-44.9-16.35-61.61l-45.25-45.25c-62.48-62.48-163.79-62.48-226.28 0l90.51 45.25v18.75c0 16.97 6.74 33.25 18.75 45.25l49.14 49.14c16.71 16.71 40.3 21.98 61.61 16.35l28.9 28.9-11.31 11.31c-6.25 6.25-6.25 16.38 0 22.63l22.63 22.63c6.25 6.25 16.38 6.25 22.63 0l90.51-90.51c6.23-6.24 6.23-16.37-.02-22.62zm-286.72-15.2c-3.7-3.7-6.84-7.79-9.85-11.95L19.64 404.96c-25.57 23.88-26.26 64.19-1.53 88.93s65.05 24.05 88.93-1.53l238.13-255.07c-3.96-2.91-7.9-5.87-11.44-9.41l-49.14-49.14z"></path></svg>
 						
 						<h3>DEVELOPMENT</h3>
@@ -81,7 +86,7 @@
 						<p>Producing the suites in the closest factory to minimize the carbon footprint. We are assembling the units on location.</p>
 					
 					</div>
-					<div>
+					<div class="toAnimate toTranslateFromRightToLeft">
 							<!-- SVG building icon -->
 							<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="building" class="svg-inline--fa fa-building fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M128 148v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12zm140 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-128 96h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm128 0h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm-76 84v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm76 12h40c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12zm180 124v36H0v-36c0-6.6 5.4-12 12-12h19.5V24c0-13.3 10.7-24 24-24h337c13.3 0 24 10.7 24 24v440H436c6.6 0 12 5.4 12 12zM79.5 463H192v-67c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v67h112.5V49L80 48l-.5 415z"></path></svg>
 						
@@ -90,7 +95,7 @@
 						<p>Opening the hotel for business in a matter of months from obtaining the construction permit.</p>
 						
 					</div>
-					<div>
+					<div class="toAnimate toTranslateFromRightToLeft">
 						<!-- SVG truck-loading icon -->
 						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="truck-loading" class="svg-inline--fa fa-truck-loading fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M50.2 375.6c2.3 8.5 11.1 13.6 19.6 11.3l216.4-58c8.5-2.3 13.6-11.1 11.3-19.6l-49.7-185.5c-2.3-8.5-11.1-13.6-19.6-11.3L151 133.3l24.8 92.7-61.8 16.5-24.8-92.7-77.3 20.7C3.4 172.8-1.7 181.6.6 190.1l49.6 185.5zM384 0c-17.7 0-32 14.3-32 32v323.6L5.9 450c-4.3 1.2-6.8 5.6-5.6 9.8l12.6 46.3c1.2 4.3 5.6 6.8 9.8 5.6l393.7-107.4C418.8 464.1 467.6 512 528 512c61.9 0 112-50.1 112-112V0H384zm144 448c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z"></path></svg>
 						
@@ -114,7 +119,9 @@
 
 						<div id="leftImage"></div>
 
-						<p class="textThirdTextSection">30 SQM</p>
+						<div class="SQMwrapper">
+							<p class="textThirdTextSection">30 SQM</p>
+						</div>
 					</div>
 
 					<div id="rightText" class="textThirdTextSection">
@@ -138,7 +145,9 @@
 
 						<div id="rightImage"></div>
 
-						<p class="textThirdTextSection">60 SQM</p>
+						<div class="SQMwrapper">
+							<p class="textThirdTextSection">60 SQM</p>
+						</div>
 					</div>
 
 		</div>	
@@ -151,9 +160,12 @@
 		<div id="fourthTextSectionBackground" class="parallax"></div>
 
 		<div id="textFourthTextSection">
-			<p><span>DISCOVER BREATHTAKING LOCATIONS</span> </br>
 
-			DENMARK | BALI | PALAU | BHUTAN | MALDIVES</p>
+			<div class="SQMwrapper">
+					<p><span>DISCOVER BREATHTAKING LOCATIONS</span></p>
+
+					<h4>DENMARK | BALI | PALAU | BHUTAN | MALDIVES</h4>
+			</div>
 		</div>
 
 	</div>
@@ -579,7 +591,7 @@
 								<img src="image/poshtel-logo.png">
 							</div>
 
-							<span>EMAIL: CONTACT@POSHTEL.IO</span>
+							<a href="mailto:CONTACT@POSHTEL.IO"><span>EMAIL: CONTACT@POSHTEL.IO</span></a>
 
 							<div id="socialMedia">
 

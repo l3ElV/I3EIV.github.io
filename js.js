@@ -1,21 +1,25 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-
-		// animation script translateY, fadeIn etc
-		document.addEventListener('scroll', event => {
-
-			document.querySelectorAll('.toAnimate').forEach(element => {
-
+		document.querySelectorAll('.toAnimate').forEach(element => {
+		
 				let triggerPosition = window.innerHeight;
-			  	let rect = element.getBoundingClientRect();
-				let elementDistanceFromViewport = rect.top;
+
 				let alreadyDone = false;
-				
+				let animationClass = element.getAttribute("class");
+
+
+				// animation script translateY, fadeIn etc
+			document.addEventListener('scroll', event => {		
+
+			
+				let rect = element.getBoundingClientRect();
+				let elementDistanceFromViewport = rect.top;
+
 
 				// when toAnimate elements are on the bottom of the screen the animation takes place
 				 if (elementDistanceFromViewport <= triggerPosition && !alreadyDone) {
 
-				 		let animationClass = element.getAttribute("class");
+				 		
 
 
 				 		switch(true){
@@ -60,8 +64,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				 				break;
 
 				 			default:
-					 			console.log("fail");				 			
-
+					 			console.log("fail");
 					 			break;
 
 
@@ -70,12 +73,107 @@ document.addEventListener('DOMContentLoaded', function(){
 				 		alreadyDone = true;
 
 					}
+					
+						// if element is on screen set property scroll 
+						if (elementDistanceFromViewport <= triggerPosition && elementDistanceFromViewport >0 && /\btranslateY\b/.test(animationClass)) {
+
+								let distanceDoneInPercentInViewport = elementDistanceFromViewport / window.innerHeight;
+								let translateYdelayValue = distanceDoneInPercentInViewport * (-1);
+
+								
+								element.style.setProperty("transition", "transform 1s cubic-bezier(.75,0,.25,1)" + translateYdelayValue + "s")
+
+
+								let dejaFait = false;
+								if (!dejaFait) {
+											let container = element.parentElement;
+											let translateYvalue = getDistanceBetweenElements(container, element);
+
+											element.style.transform = "translateY(" + translateYvalue + "px)";
+
+											dejaFait = true;
+								}
+
+							}
+
+
 
 
 			  })
 
-		})
+			
+						function getDistanceBetweenElements(a, b) {
+						
+							let aRect = a.getBoundingClientRect();
+							let bRect = b.getBoundingClientRect();
 
+							let aYaxe = aRect.top ;
+							let bYaxe = bRect.top;
+
+							let distanceBetweenElements = aYaxe - bYaxe;
+							
+							return distanceBetweenElements;
+							 }
+
+
+
+					if (/\btranslateY\b/.test(animationClass)) {
+
+				
+						
+						let container = element.parentElement;
+	
+
+
+						
+
+									// checking if there are any sibling element if yes :
+									if (element.previousElementSibling != null ) {
+
+
+											 // calculate the difference between each Y axes and the container then calculate the element target position
+											function getTranslateYvalue(element) {
+
+												let elementFurthestPreviousSibling = element.previousElementSibling;
+
+												
+
+												let distanceWithFurthestPreviousSibling = getDistanceBetweenElements(elementFurthestPreviousSibling, element);
+
+
+
+												let distanceBetweenElementAndContainer = getDistanceBetweenElements(container, element);
+
+
+
+
+												// the target position (translateYvalue) of the animation depending on siblings element to not make them target the same final position
+												let translateYvalue = distanceBetweenElementAndContainer - distanceWithFurthestPreviousSibling;
+
+							
+												element.style.transform = "translateY(" + translateYvalue + "px)";
+
+												  return translateYvalue;
+												}
+
+									getTranslateYvalue(element);
+									
+									}
+
+									else{	
+
+											
+											// let translateYvalue = getDistanceBetweenElements(container, element);
+
+											// element.style.transform = "translateY(" + translateYvalue + "px)";
+
+						
+											}
+							}					
+
+					
+
+		})
 
 
 		// animation FAQ
@@ -120,14 +218,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 		})
-
-		// scrolling answers in FAQ section
-
-
-
-
-
-
 
 
 
