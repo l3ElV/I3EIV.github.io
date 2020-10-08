@@ -1445,7 +1445,12 @@ span{
 
 /*mobile display*/
 
-@media (max-width: 993px) {
+@media (max-width: 993px) {	
+
+	#parallax1{
+
+		-webkit-background-size: initial;
+	}
 
 	#sloganNameWrapper{
 
@@ -1554,7 +1559,7 @@ span{
 
 	filter: initial;
 	height: 100vh;
-	
+
 
 
 	}

@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		});
 
 
-			let textBlocks = document.querySelectorAll('.textBlock, .textThirdTextSection');
+			let textBlocks = document.querySelectorAll('.textBlock');
 
 		textBlocks.forEach(textBlock =>{
 
