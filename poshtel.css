@@ -1447,10 +1447,6 @@ span{
 
 @media (max-width: 993px) {	
 
-	#parallax1{
-
-		-webkit-background-size: initial;
-	}
 
 	#sloganNameWrapper{
 
@@ -1460,7 +1456,7 @@ span{
 
 		text-align: center;
 		justify-content: center;
-		height: 100%;
+		height: 100vh;
 	}
 
 		#sloganNameWrapper h2, #text1 h2{
