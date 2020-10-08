@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
 
+
+
 		document.querySelectorAll('.toAnimate').forEach(element => {
 		
 				let triggerPosition = window.innerHeight;
@@ -99,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-			  })
+			  });
 
 			
 						function getDistanceBetweenElements(a, b) {
@@ -173,7 +175,9 @@ document.addEventListener('DOMContentLoaded', function(){
 
 					
 
-		})
+		});
+
+
 
 
 		// animation FAQ
@@ -214,14 +218,59 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-				})
+				});
 
 
-		})
+		});
+
+
+			let textBlocks = document.querySelectorAll('.textBlock');
+
+		textBlocks.forEach(textBlock =>{
+
+
+			let textBlockHeight = textBlock.offsetHeight;
+			let textBlockParent = textBlock.parentElement;
+
+
+				for (var i = 0; i < textBlockParent.children.length; i++) {
+
+				    textBlockParent.children[i].style.height = textBlockHeight + "px";
+				}
+
+			textBlock.style.height = "auto";
+			
+
+		});
+
+		window.addEventListener('resize', event => {
+
+
+		
+
+						let textBlocks = document.querySelectorAll('.textBlock');
+
+					textBlocks.forEach(textBlock =>{
+
+
+						let textBlockHeight = textBlock.offsetHeight;
+						let textBlockParent = textBlock.parentElement;
+
+
+							for (var i = 0; i < textBlockParent.children.length; i++) {
+
+							    textBlockParent.children[i].style.height = textBlockHeight + "px";
+							}
+
+						textBlock.style.height = "auto";
+						
+
+					});
+
+		});
 
 
 
-
-})
+});
 
 
