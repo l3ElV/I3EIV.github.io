@@ -1509,6 +1509,7 @@ span{
 	#topRow {
 
 		flex-direction: column-reverse;
+		height: 100px;
 	}
 
 
