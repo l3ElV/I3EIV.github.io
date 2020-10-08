@@ -1509,6 +1509,7 @@ span{
 	#topRow {
 
 		flex-direction: column-reverse;
+		
 	}
 
 
@@ -1529,6 +1530,8 @@ span{
 		transition-duration: 2s;
 	}
 
+
+
 	#topRow #leftImage, #bottomRow #rightImage{
 
 		background-position: center;
@@ -1545,6 +1548,15 @@ span{
 
 			background-size: contain;
 			background-repeat: no-repeat;
+	}
+
+	#topRow .imageTextWrapper:hover #leftImage, #bottomRow .imageTextWrapper:hover #rightImage{
+
+	filter: initial;
+	height: 100vh;
+	
+
+
 	}
 
 	.imageTextWrapper .textThirdTextSection{
