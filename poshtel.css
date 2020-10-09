@@ -1541,6 +1541,13 @@ span{
 		transform: scale(1);
 	}
 
+	#topRow #leftImage:hover{
+
+		filter: brightness(1);
+		transition-duration: initial;
+		transform: translateY(0) scale(1);
+	}
+
 	#bottomRow #rightImage{
 
 			background-size: contain;
@@ -1553,7 +1560,7 @@ span{
 	transition-duration: initial;
 	transform: translateY(0) scale(1);
 
-}
+	}
 
 	.imageTextWrapper .textThirdTextSection{
 
