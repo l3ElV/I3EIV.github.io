@@ -1547,6 +1547,14 @@ span{
 			background-repeat: no-repeat;
 	}
 
+	#topRow .imageTextWrapper:hover #leftImage, #bottomRow .imageTextWrapper:hover #rightImage{
+
+	filter: brightness(1);
+	transition-duration: initial;
+	transform: translateY(0) scale(1);
+
+}
+
 	.imageTextWrapper .textThirdTextSection{
 
 		background-color: rgba(0,0,0, 0.3);
