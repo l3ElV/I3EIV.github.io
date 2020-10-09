@@ -1273,7 +1273,9 @@ footer #footerTextWrapper{
 
 #companyName{
 
-	animation: fadeIn 3s ease-in;
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
 
 	
 
@@ -1381,7 +1383,7 @@ span{
 
 .textThirdTextSection h2{
 
-	
+
 	animation-duration: 4s;
 }
 
