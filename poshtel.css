@@ -1317,7 +1317,7 @@ span{
 }
 
 
-.toAnimate1.animation1{
+.animation1{
 
 	animation-fill-mode: forwards;
 	animation-name: fadeIn;
