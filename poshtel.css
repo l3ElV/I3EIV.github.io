@@ -1536,7 +1536,7 @@ span{
 		
 	}
 
-	#topRow #leftImage{
+	#topRow #leftImage, #bottomRow #rightImage {
 
 		transform: scale(1);
 	}
@@ -1546,12 +1546,14 @@ span{
 		filter: brightness(1);
 		transition-duration: initial;
 		transform: translateY(0) scale(1);
+
 	}
 
 	#bottomRow #rightImage{
 
 			background-size: contain;
 			background-repeat: no-repeat;
+
 	}
 
 	#topRow .imageTextWrapper:hover #leftImage, #bottomRow .imageTextWrapper:hover #rightImage{
@@ -1780,7 +1782,6 @@ span{
 		        background-attachment: initial!important;
 		        
 		    }
-
 
 	}
 
