@@ -1317,7 +1317,7 @@ span{
 
 .toAnimate1.animation1{
 
-	animation-fill-mode: both;
+	animation-fill-mode: forwards;
 	animation-name: fadeIn;
 	animation-duration: 1.25s;
 	animation-timing-function: ease-in;
