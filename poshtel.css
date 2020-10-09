@@ -1777,8 +1777,8 @@ span{
 	@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
 
 		    .parallax {
-		        background-position: initial;
-		        background-size: initial;
+		        background-position: initial!important;
+		        background-size: initial!important;
 		    }
 
 		    	#sloganNameWrapper{
