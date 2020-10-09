@@ -1771,6 +1771,22 @@ span{
 		text-transform: initial;)
 		
 	}
+
+		/*I hate chrome*/
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+
+		    .parallax {
+		        background-position: initial;
+		    }
+
+		    	#sloganNameWrapper{
+
+
+				height: 95vh;
+			}
+	}
+	
 }
 
 @media (min-width: 640px) and (max-width: 993px){
@@ -1780,20 +1796,7 @@ span{
 		background-position: 0 -15vw;
 	}
 
-	/*I hate chrome*/
 
-	@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
-
-    .parallax {
-        background-position: initial;
-    }
-
-    	#sloganNameWrapper{
-
-
-		height: 95vh;
-	}
-}
 
 
 
