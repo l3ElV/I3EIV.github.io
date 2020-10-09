@@ -64,7 +64,7 @@ a, a:hover{
 	width: 100%;
 
 	
-	
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -1445,8 +1445,7 @@ span{
 
 /*mobile display*/
 
-@media (max-width: 993px) {	
-
+@media (max-width: 993px) {
 
 	#sloganNameWrapper{
 
@@ -1456,7 +1455,7 @@ span{
 
 		text-align: center;
 		justify-content: center;
-		height: 100vh;
+		height: 100%;
 	}
 
 		#sloganNameWrapper h2, #text1 h2{
@@ -1510,7 +1509,6 @@ span{
 	#topRow {
 
 		flex-direction: column-reverse;
-		
 	}
 
 
@@ -1531,8 +1529,6 @@ span{
 		transition-duration: 2s;
 	}
 
-
-
 	#topRow #leftImage, #bottomRow #rightImage{
 
 		background-position: center;
@@ -1549,15 +1545,6 @@ span{
 
 			background-size: contain;
 			background-repeat: no-repeat;
-	}
-
-	#topRow .imageTextWrapper:hover #leftImage, #bottomRow .imageTextWrapper:hover #rightImage{
-
-	filter: initial;
-	height: 100vh;
-
-
-
 	}
 
 	.imageTextWrapper .textThirdTextSection{
