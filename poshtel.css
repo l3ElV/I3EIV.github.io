@@ -1780,5 +1780,16 @@ span{
 		background-position: 0 -15vw;
 	}
 
+	/*I hate chrome*/
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+
+    .parallax {
+        background-position: initial;
+    }
+}
+
+
+
 }
 
