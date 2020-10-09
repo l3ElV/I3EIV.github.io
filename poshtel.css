@@ -1778,6 +1778,7 @@ span{
 
 		    .parallax {
 		        background-position: initial;
+		        background-size: initial;
 		    }
 
 		    	#sloganNameWrapper{
@@ -1786,7 +1787,7 @@ span{
 				height: 95vh;
 			}
 	}
-	
+
 }
 
 @media (min-width: 640px) and (max-width: 993px){
