@@ -1311,7 +1311,7 @@ span{
 
 
 /*--------------------------------------------*/
-.toAnimate1, .toAnimate1Delayed{
+.toAnimate, .toAnimate1, .toAnimate1Delayed{
 
 	opacity: 0;
 }
