@@ -1310,14 +1310,11 @@ span{
 
 /*--------------------------------------------*/
 
-.toAnimate1,.toAnimate1Delayed{
 
-	opacity: 0;
-}
 
 .toAnimate1.animation1{
 
-	animation-fill-mode: forwards;
+	animation-fill-mode: both;
 	animation-name: fadeIn;
 	animation-duration: 1.25s;
 	animation-timing-function: ease-in;
@@ -1327,6 +1324,7 @@ span{
 
 .animation1Delayed{
 
+	animation-fill-mode: both;
 	animation-name: fadeIn;
 	animation-duration: 2.5s;
 	animation-timing-function: ease-in-out;
