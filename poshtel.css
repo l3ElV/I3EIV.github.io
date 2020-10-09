@@ -1327,7 +1327,7 @@ span{
 
 .animation1Delayed{
 
-	animation-fill-mode: both;
+	animation-fill-mode: forwards;
 	animation-name: fadeIn;
 	animation-duration: 2.5s;
 	animation-timing-function: ease-in-out;
@@ -1357,6 +1357,7 @@ span{
 
 .translateFromLeftToRight{
 
+	animation-fill-mode: forwards;
 	animation-name: translateFromLeftToRight;
 	animation-duration: 2s;
 
@@ -1364,6 +1365,7 @@ span{
 
 .translateFromBottomToTop{
 
+	animation-fill-mode: forwards;
 	animation-name: translateFromBottomToTop;
 	animation-duration: 2s;
 	
@@ -1371,6 +1373,7 @@ span{
 
 .translateFromRightToLeft{
 
+	animation-fill-mode: forwards;
 	animation-name: translateFromRightToLeft;
 	animation-duration: 2s;
 	
@@ -1378,6 +1381,7 @@ span{
 
 .textThirdTextSection h2{
 
+	
 	animation-duration: 4s;
 }
 
