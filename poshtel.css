@@ -1309,7 +1309,7 @@ span{
 
 
 /*--------------------------------------------*/
-.toAnimate1; .toAnimate1Delayed{
+.toAnimate1, .toAnimate1Delayed{
 
 	opacity: 0;
 }
