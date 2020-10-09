@@ -318,7 +318,7 @@ line-height: initial;
 
 #topRow #leftImageTextWrapper, #bottomRow #rightImageTextWrapper{
 
-	min-height: 100vh;
+	height: 100vh;
 
 	position: relative;
 }
