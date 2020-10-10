@@ -1543,7 +1543,7 @@ span{
 
 	#leftImageTextWrapper, #rightImageTextWrapper {
     width: 100vw;
-    min-height: none;
+    min-height: initial;
 }
 
 #topRow #leftImageTextWrapper, #bottomRow #rightImageTextWrapper {
@@ -1574,7 +1574,7 @@ span{
 	#parallax4, #parallax3{
 
 		height: 50vh;
-		min-height: none;
+		min-height: initial;
 		background-position: center;
 	}
 
