@@ -1787,6 +1787,16 @@ span{
 		
 	}
 
+	.translateFromLeftToRight, .translateFromBottomToTop, .translateFromRightToLeft{
+
+
+	animation-name: none;
+
+
+}
+
+
+
 		/*I hate chrome*/
 
 	@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
