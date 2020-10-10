@@ -1426,34 +1426,6 @@ span{
 		}
 }
 
-/*p, span, h1, h2 ,h3{
-
-	animation: translateY;
-
-}
-*/
-
-.translateY{
-/*to do mettre tout dans une seul animation pour pas mélanger les properiétés des animations*/
-    /*animation: translateY 1s infinite cubic-bezier(0, .33, .07, 1.03) calc(var(--scroll) * -1s) 1 normal both paused;*/
-/*    transition: transform
-    animation-name: translateY;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-  	animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(.75,0,.25,1);*/
-
-}
-
-
-/*@keyframes translateY {
-
-		to {
-		    transform: translateY(var(--translateY));
-		}
-}*/
 
 
 /*mobile display*/
@@ -1569,6 +1541,16 @@ span{
 
 	}
 
+	#leftImageTextWrapper, #rightImageTextWrapper {
+    width: 100vw;
+    min-height: none;
+}
+
+#topRow #leftImageTextWrapper, #bottomRow #rightImageTextWrapper {
+    height: 50vh;
+ 
+}
+
 	#topRow .imageTextWrapper:hover #leftImage, #bottomRow .imageTextWrapper:hover #rightImage{
 
 	filter: brightness(1);
@@ -1591,7 +1573,14 @@ span{
 
 	#parallax4, #parallax3{
 
+		height: 50vh;
+		min-height: none;
 		background-position: center;
+	}
+
+	#parallax4{
+
+
 	}
 
 
