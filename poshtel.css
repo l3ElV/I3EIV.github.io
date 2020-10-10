@@ -1808,6 +1808,53 @@ span{
 	
 }
 
+
+#topRow .imageTextWrapper:hover #leftImage, #bottomRow .imageTextWrapper:hover #rightImage{
+
+	/*cancel animation hover on mobile*/
+	filter: brightness(1);
+	transition-duration: 0s;
+	transform: translateY(0%) scale(1);
+
+}
+
+#topRow .imageTextWrapper:hover .textThirdTextSection, #bottomRow .imageTextWrapper:hover .textThirdTextSection{
+
+	/*cancel the animation on mobile*/
+	transition-duration: 0s;
+	transform: scale(1);
+
+}
+
+#fourthTextSection #fourthTextSectionBackground{
+
+
+	transition-duration: 0s;
+
+}
+
+#fourthTextSection:hover #fourthTextSectionBackground{
+
+
+	filter: brightness(1);
+	transition-duration: 0s;
+}
+
+#fourthTextSection #textFourthTextSection{
+
+
+	transition-duration: 0s;
+
+}
+
+#fourthTextSection:hover #textFourthTextSection{
+
+
+	transform: scale(1);
+	transition-duration: 0s;
+
+}
+
 		/*I hate chrome*/
 
 	@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
