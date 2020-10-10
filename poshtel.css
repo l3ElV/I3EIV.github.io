@@ -1828,7 +1828,7 @@ span{
 
 #fourthTextSection #fourthTextSectionBackground{
 
-
+	filter: brightness(0.3);
 	transition-duration: 0s;
 
 }
@@ -1836,7 +1836,7 @@ span{
 #fourthTextSection:hover #fourthTextSectionBackground{
 
 
-	filter: brightness(1);
+	filter: brightness(0.3);
 	transition-duration: 0s;
 }
 
