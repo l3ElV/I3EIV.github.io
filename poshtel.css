@@ -1787,15 +1787,26 @@ span{
 		
 	}
 
-	.translateFromLeftToRight, .translateFromBottomToTop, .translateFromRightToLeft{
+	.translateFromLeftToRight{
 
-
-	animation-name: none;
-
+	animation-name: translateFromLeftToRight;
+	animation-duration: 0s;
 
 }
 
+.translateFromBottomToTop{
 
+	animation-name: translateFromBottomToTop;
+	animation-duration: 0s;
+	
+}
+
+.translateFromRightToLeft{
+
+	animation-name: translateFromRightToLeft;
+	animation-duration: 0s;
+	
+}
 
 		/*I hate chrome*/
 
