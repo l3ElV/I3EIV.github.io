@@ -628,10 +628,10 @@
 
 							<form id="formNewsletter" action="newsletter.php">
 
-								<label for="formNewsletter">Subscribe to receive news and deals from us. No spam, we promise</label>
+								<label for="inputYourEmail">Subscribe to receive news and deals from us. No spam, we promise</label>
 
 								<div>
-									<input type="email" name="newsletter" placeholder="Email">
+									<input id="inputYourEmail" type="email" name="newsletter" placeholder="Email">
 									<button type="submit">SUBSCRIBE</button>
 								</div>
 
@@ -639,10 +639,11 @@
 							
 						</div>
 						<div id="contactUsRightSide">
-							<form action="mailto:benjamin.lesne@outlook.fr">
+							
+							<form id="contactForm" action="mailto:benjamin.lesne@outlook.fr">
 								<input type="text" name="name" placeholder="Name">
 								<input type="email" name="emailGrabber" placeholder="Email">
-								<textarea form="" name="message" placeholder="Message" rows="5" cols="65"></textarea>
+								<textarea form="contactForm" name="message" placeholder="Message" rows="5" cols="65"></textarea>
 								<button type="submit">SEND MESSAGE</button>
 
 
